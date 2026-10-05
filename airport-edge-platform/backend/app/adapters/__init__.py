@@ -1,0 +1,1 @@
+"""Hardware adapter contracts and mock implementations."""

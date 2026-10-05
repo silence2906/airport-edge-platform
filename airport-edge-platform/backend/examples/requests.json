@@ -1,0 +1,35 @@
+{
+  "identity_verify": {
+    "passenger_id": "PAX-10001",
+    "identity_detected": true,
+    "mock_identity_match": true,
+    "boarding_pass_present": true,
+    "flight_number": "AI123"
+  },
+  "self_checkin": {
+    "passenger_id": "PAX-10001",
+    "answers": [
+      { "question": "What is your flight number?", "answer": "AI123" },
+      { "question": "What is your destination?", "answer": "DEL" }
+    ]
+  },
+  "camera_scan": {
+    "device_id": "CAM-001",
+    "location": "CHECKIN-A",
+    "frame_id": "FRAME-10001",
+    "detections": [
+      { "object_type": "mock_demo_restricted", "confidence": 0.91 }
+    ]
+  },
+  "thermal_scan": {
+    "device_id": "THERMAL-001",
+    "temperature_c": 38.2
+  },
+  "baggage_scan": {
+    "device_id": "BAGGAGE-001",
+    "bag_id": "BAG-10001",
+    "passenger_id": "PAX-10001",
+    "scan_type": "XRAY",
+    "simulated_objects": ["mock_demo_restricted"]
+  }
+}
